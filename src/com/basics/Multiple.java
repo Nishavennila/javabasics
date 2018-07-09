@@ -5,7 +5,7 @@ public class Multiple {
 		Multiple hfi=new Multiple();
 		System.out.println(hfi.isMultiple(34,56));
 		System.out.println(hfi.isEven(54));
-		System.out.println(hfi.ispalindrome(454));
+		System.out.println(hfi.ispalindrome(456));
 	System.out.println(hfi.isPerfectnumber(6));
 	}
 	
@@ -22,7 +22,7 @@ if(e % 2 == 0)
 }
 public boolean isPerfectnumber(int number) {
 	int sum=0;
-	for(int i=1;i<number;i++) {
+	for(int i=1;i<=number/2;i++) {
 		if(number % i == 0)
 			sum=sum+i;
 	}
@@ -37,7 +37,7 @@ public double convert(double celsius) {
 }
 
 public boolean ispalindrome(int i) {
-int t,sum=0,temp;
+int  t,sum=0,temp;
 temp=i;
 while(i>0)
 {
@@ -45,7 +45,7 @@ while(i>0)
 	sum=(sum * 10)+t;
 	i=i / 10;
 }
-return temp == sum ? true:false;
+return temp==sum ? true : false;
 }
 }
 
